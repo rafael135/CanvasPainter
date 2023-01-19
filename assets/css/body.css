@@ -1,0 +1,92 @@
+main {
+    max-width: 100%;
+}
+
+section#tools-section {
+    height: 100px;
+    background-color: rgb(175, 175, 175);
+}
+section#tools-section .container {
+    padding-left: 60px;
+    padding-right: 60px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tools {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.tool {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(80, 80, 80);
+    border-radius: 12px;
+    background-color: rgb(70, 70, 70);
+    transition: all ease 200ms;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.tool.active svg {
+    fill: rgb(54, 180, 238);
+}
+.tool:last-child {
+    margin-right: 0;
+}
+.tool svg {
+    fill: #FFF;
+    width: 48px;
+    height: 48px;
+    transition: all ease 200ms;
+}
+.tool:hover {
+    background-color: rgb(90, 90, 90);
+}
+.tool:hover svg {
+    fill: rgb(54, 180, 238)
+}
+
+.colors {
+    display: flex;
+    flex-direction: row;
+}
+.colors .color {
+    width: 64px;
+    height: 64px;
+    margin-right: 10px;
+    border: 1px solid rgb(90, 90, 90);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all ease 200ms;
+}
+.colors .color.active {
+    border-width: 3px;
+    border-color: rgba(217, 221, 4, 0.904);
+}
+.colors .color:hover {
+    opacity: 0.6;
+}
+.colors .color:last-child {
+    margin-right: 0;
+}
+
+section#canvas-section {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+section#canvas-section canvas {
+    border: 1px solid rgb(80, 80, 80);
+    background-color: #FFF;
+    border-radius: 6px;
+    margin: auto;
+    cursor: crosshair;
+}
