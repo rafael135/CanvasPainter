@@ -1,0 +1,36 @@
+@keyframes linkHover {
+    0%{
+        color: rgb(54, 180, 238);
+    }
+    50%{
+        color: rgb(35, 148, 201);
+    }
+    100%{
+        color: rgb(13, 97, 136);
+    }
+}
+
+footer {
+    height: 60px;
+    background-color: rgb(46, 46, 46);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+    margin-top: auto;
+    color: #FFF;
+    border-top: 1px solid #666;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(54, 180, 238);
+    margin-left: 3px;
+    transition: all ease 200ms;
+}
+
+footer a:hover{
+    animation-name: linkHover;
+    animation-duration: 700ms;
+    animation-iteration-count: infinite;
+}   
