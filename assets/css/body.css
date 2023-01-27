@@ -88,7 +88,7 @@ section#tools-section .container {
     cursor: pointer;
     transition: all ease 200ms;
 }
-.colors .color.active {
+.colors .active {
     border-width: 3px;
     border-color: rgba(217, 221, 4, 0.904);
 }
@@ -97,6 +97,13 @@ section#tools-section .container {
 }
 .colors .color:last-child {
     margin-right: 0;
+}
+
+
+.pickr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 section#canvas-section {

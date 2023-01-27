@@ -1,0 +1,20 @@
+@media(max-width: 1300px) {
+    section#tools-section {
+        height: 200px;
+    }
+
+    section#tools-section .container {
+        flex-wrap: wrap;
+    }
+
+    .tool {
+        margin-right: 12px;
+    }
+
+
+    #canvas {
+        width: calc(100% - 40px);
+    }
+
+
+}
